@@ -1,0 +1,24 @@
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\JGRAN Tempgroup plugin.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\JGRAN Tempgroup plugin.pdb
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\OTAPI.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\TerrariaServer.exe
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\TShockAPI.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\Newtonsoft.Json.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\HttpServer.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\MySql.Data.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\BCrypt.Net.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\Mono.Data.Sqlite.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\OTAPI.pdb
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\TerrariaServer.pdb
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\TShockAPI.pdb
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\TShockAPI.xml
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\TShockAPI.dll.config
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\Newtonsoft.Json.xml
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\HttpServer.pdb
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\HttpServer.xml
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\bin\Debug\BCrypt.Net.xml
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\obj\Debug\JGRAN Tempgroup plugin.csprojAssemblyReference.cache
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\obj\Debug\JGRAN Tempgroup plugin.csproj.CoreCompileInputs.cache
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\obj\Debug\JGRAN Tempgroup plugin.csproj.CopyComplete
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\obj\Debug\JGRAN Tempgroup plugin.dll
+E:\JGRAN Tempgroup Plugin\JGRAN Tempgroup plugin\obj\Debug\JGRAN Tempgroup plugin.pdb
