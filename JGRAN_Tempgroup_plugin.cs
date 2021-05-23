@@ -12,8 +12,8 @@ namespace JGRAN_Tempgroup_plugin
     public class JGRAN_Tempgroup_plugin : TerrariaPlugin
     {
         public override string Author => "Rondeo Balos";
-        public override string Description => "A Leveling/Points plugin";
-        public override string Name => "JGRAN Level Plugin";
+        public override string Description => "Recreating Tshock's TempGroup adding time continous feature even if the player is offline";
+        public override string Name => "JGRAN TempGroup Plugin";
         public override Version Version => Assembly.GetExecutingAssembly().GetName().Version;
 
         public JGRAN_Tempgroup_plugin(Main game) : base(game) { }
