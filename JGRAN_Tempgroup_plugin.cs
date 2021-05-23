@@ -135,6 +135,7 @@ namespace JGRAN_Tempgroup_plugin
 					return;
 				}
 				args.Player.SendInfoMessage("User {0} is offline. Reward has been granted and executed.", args.Parameters[0]);
+				offline.Remove(args.Parameters[0]);
 				offline.Add(args.Parameters[0], String.Format("{0}|{1}|{2}|{3}", args.Parameters[1], args.Parameters[2], DateTime.Now, time));
 				return;
 			}
@@ -158,6 +159,7 @@ namespace JGRAN_Tempgroup_plugin
 				ply[0].tempGroupTimer.Elapsed += ply[0].TempGroupTimerElapsed;
 				ply[0].tempGroupTimer.Start();
 
+				online.Remove(args.Parameters[0]);
 				online.Add(args.Parameters[0], String.Format("{0}|{1}|{2}|{3}", args.Parameters[1], args.Parameters[2], DateTime.Now, time));
 			}
 
