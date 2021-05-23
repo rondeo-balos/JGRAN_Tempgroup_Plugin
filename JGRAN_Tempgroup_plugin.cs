@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using Terraria;
 using TerrariaApi.Server;
 using TShockAPI;
@@ -44,7 +45,7 @@ namespace JGRAN_Tempgroup_plugin
             });
         }
 
-		private static void onJoin(JoinEventArgs args)
+		private async static void onJoin(JoinEventArgs args)
         {
 
 			DateTime now = DateTime.Now;
@@ -60,6 +61,8 @@ namespace JGRAN_Tempgroup_plugin
 
 			int time;
 			if (!Int32.TryParse(grouptime[3], out time)) return;
+
+			await Task.Delay(1000);
 
 			if (time - now.Subtract(elapse).Seconds > 0)
 			{
