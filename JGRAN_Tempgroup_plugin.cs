@@ -73,7 +73,7 @@ namespace JGRAN_Tempgroup_plugin
 
 				ply[0].SendSuccessMessage(String.Format("Your group has been changed to {0} for {1}s", group.Name, time - now.Subtract(elapse).Seconds));
 
-
+				online.Remove(name);
 				online.Add(name, gt);
 			}
 
@@ -98,6 +98,7 @@ namespace JGRAN_Tempgroup_plugin
 
 			if (time - now.Subtract(elapse).Seconds > 0)
             {
+				offline.Remove(name);
 				offline.Add(name, gt);
             }
 
