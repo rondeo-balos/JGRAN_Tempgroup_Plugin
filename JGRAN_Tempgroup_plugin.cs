@@ -22,8 +22,8 @@ namespace JGRAN_Tempgroup_plugin
         public override void Initialize()
         {
             ServerApi.Hooks.GameInitialize.Register(this, onInit);
-			TShockAPI.Hooks.PlayerHooks.PlayerPostLogin.Register(this, onJoin);
-			//TShockAPI.GetDataHandlers.PlayerPostLogin += onJoin;
+			//TShockAPI.Hooks.PlayerHooks.PlayerPostLogin.Register(this, onJoin);
+			TShockAPI.Hooks.PlayerHooks.PlayerPostLogin += onJoin;
 			ServerApi.Hooks.ServerLeave.Register(this, onLeave);
 		}
 
@@ -32,8 +32,8 @@ namespace JGRAN_Tempgroup_plugin
             if (disposing)
             {
                 ServerApi.Hooks.GameInitialize.Deregister(this, onInit);
-				TShockAPI.Hooks.PlayerHooks.PlayerPostLogin.Deregister(this, onJoin);
-				//TShockAPI.GetDataHandlers.PlayerPostLogin -= onJoin;
+				//TShockAPI.Hooks.PlayerHooks.PlayerPostLogin.Deregister(this, onJoin);
+				TShockAPI.Hooks.PlayerHooks.PlayerPostLogin -= onJoin;
 				ServerApi.Hooks.ServerLeave.Deregister(this, onLeave);
 			}
             base.Dispose(disposing);
@@ -47,7 +47,7 @@ namespace JGRAN_Tempgroup_plugin
             });
         }
 
-		private async static void onJoin(PlayerPostLoginEventArgs args /*object sender, TShockAPI.GetDataHandlers.PlayerPostLoginEventArgs args*/)
+		private async static void onJoin(/*PlayerPostLoginEventArgs args*/ object sender, TShockAPI.Hooks.PlayerHooks.PlayerPostLoginEventArgs args)
         {
 
 			DateTime now = DateTime.Now;
