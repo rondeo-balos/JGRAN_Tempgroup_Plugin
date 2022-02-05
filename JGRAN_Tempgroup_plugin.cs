@@ -52,7 +52,7 @@ namespace JGRAN_Tempgroup_plugin
 
 			DateTime now = DateTime.Now;
 
-			string name = args.Player.name; //Main.player[args.Who].name;
+			string name = args.Player.Name; //Main.player[args.Who].name;
 			string gt;
 
 			if (!offline.TryGetValue(name, out gt)) { return; }
