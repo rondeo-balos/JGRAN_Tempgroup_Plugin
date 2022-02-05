@@ -22,7 +22,7 @@ namespace JGRAN_Tempgroup_plugin
         public override void Initialize()
         {
             ServerApi.Hooks.GameInitialize.Register(this, onInit);
-			ServerApi.Hooks.ServerJoin.Register(this, onJoin);
+			ServerApi.Hooks.PlayerPostLogin.Register(this, onJoin);
 			ServerApi.Hooks.ServerLeave.Register(this, onLeave);
 		}
 
@@ -31,7 +31,7 @@ namespace JGRAN_Tempgroup_plugin
             if (disposing)
             {
                 ServerApi.Hooks.GameInitialize.Deregister(this, onInit);
-				ServerApi.Hooks.ServerJoin.Deregister(this, onJoin);
+				ServerApi.Hooks.PlayerPostLogin.Deregister(this, onJoin);
 				ServerApi.Hooks.ServerLeave.Deregister(this, onLeave);
 			}
             base.Dispose(disposing);
@@ -45,7 +45,7 @@ namespace JGRAN_Tempgroup_plugin
             });
         }
 
-		private async static void onJoin(JoinEventArgs args)
+		private async static void onJoin(PlayerPostLoginEventArgs args)
         {
 
 			DateTime now = DateTime.Now;
