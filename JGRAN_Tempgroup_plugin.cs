@@ -47,7 +47,7 @@ namespace JGRAN_Tempgroup_plugin
             });
         }
 
-		private async static void onJoin(/*PlayerPostLoginEventArgs args*/ object sender, TShockAPI.GetDataHandlers.PlayerPostLoginEventArgs)
+		private async static void onJoin(/*PlayerPostLoginEventArgs args*/ object sender, TShockAPI.GetDataHandlers.PlayerPostLoginEventArgs args)
         {
 
 			DateTime now = DateTime.Now;
