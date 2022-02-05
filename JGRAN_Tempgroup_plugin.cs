@@ -22,7 +22,7 @@ namespace JGRAN_Tempgroup_plugin
         public override void Initialize()
         {
             ServerApi.Hooks.GameInitialize.Register(this, onInit);
-			ServerApi.Hooks.PlayerHooks.PlayerPostLogin.Register(this, onJoin);
+			TShockAPI.Hooks.PlayerHooks.PlayerPostLogin.Register(this, onJoin);
 			//TShockAPI.GetDataHandlers.PlayerPostLogin += onJoin;
 			ServerApi.Hooks.ServerLeave.Register(this, onLeave);
 		}
@@ -32,7 +32,7 @@ namespace JGRAN_Tempgroup_plugin
             if (disposing)
             {
                 ServerApi.Hooks.GameInitialize.Deregister(this, onInit);
-				ServerApi.Hooks.PlayerHooks.PlayerPostLogin.Deregister(this, onJoin);
+				TShockAPI.Hooks.PlayerHooks.PlayerPostLogin.Deregister(this, onJoin);
 				//TShockAPI.GetDataHandlers.PlayerPostLogin -= onJoin;
 				ServerApi.Hooks.ServerLeave.Deregister(this, onLeave);
 			}
