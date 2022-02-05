@@ -87,7 +87,7 @@ namespace JGRAN_Tempgroup_plugin
 
 		private static void onLeave(LeaveEventArgs args)
         {
-			string name = Main.player[args.Who].name;
+			string name = args.Player.name; //Main.player[args.Who].name;
 			List<TSPlayer> ply = TSPlayer.FindByNameOrID(Main.player[args.Who].name);
 
 			DateTime now = DateTime.Now;
